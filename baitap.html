@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập</title>
+</head>
+<body>
+    <table border=1 cellspacing=0 cellpadding=20px > 
+        <tr>
+            <td colspan=2></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan=2 rowspan=2></td>                       
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan=2 rowspan=4></td>
+            <td></td>
+            <td></td>
+            <td></td>                     
+        </tr><tr>
+            <td></td>
+            <td colspan=5></td>           
+        </tr><tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>         
+        </tr><tr>
+            <td></td>
+            <td></td>
+            <td colspan=2 rowspan=2></td>
+            <td></td>
+            <td></td>              
+        </tr><tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>           
+        </tr>
+    </table>
+
+
+
+    <h1 style="background-color: green;">Đăng kí thành viên</h1>
+    <form > 
+        <table border=1 cellspacing=0 cellpadding=15>
+            <thead>
+                <tr>
+                    <th>Nội dung</th>
+                    <th>Giá trị</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Họ tên:</td>
+                    <td>
+                        <input type="text" placeholder="Nhập họ và tên ...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input type="email" placeholder="abc@gmail.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td>
+                        <input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Avatar:</td>
+                    <td>
+                        <input type="file" accept="image/png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại:</td>
+                    <td>
+                        <input type="tel" maxlength="11">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tuổi:</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">1 tuổi</option>
+                            <option value="">2 tuổi</option>
+                            <option value="">3 tuổi</option>
+                            <option value="">4 tuổi</option>
+                            <option value="">5 tuổi</option>
+                            <option value="">6 tuổi</option>
+                            <option value="">7 tuổi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính:</td>
+                    <td>
+                        <input type="radio" name="sex" checked>Nam
+                        <br>
+                        <input type="radio" name="sex">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sở thích:</td>
+                    <td>
+                        <input type="checkbox" checked>Đá bóng
+                        <br>
+                        <input type="checkbox" checked>Cầu lông
+                        <br>
+                        <input type="checkbox" checked>Đua thuyền
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú:</td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="10">Buổi học đầu tiên về HTML</textarea>                                                 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+            <input type="submit" value="Đăng kí">
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'news/Home.html' %}
+{% block content123 %}
+<div>
+{% if nd %}
+    <h2>{{nd.art_name}}</h2>
+    <br>
+    <p>{{nd.art_create_time}}</p>
+    <h3>{{nd.art_summary}}</h3>
+    <img src="{{nd.art_image.url}}">
+    <br>
+    <p>{{nd.art_content|safe}}</p>
+    <div>
+        <h3>Bình luận:</h3>
+    {% for item in nd.comment_set.all %}
+    <p>{{item.cmt_name}}: {{item.cmt_content}}</p>
+    {% endfor %}
+    </div>
+{% endif %}
+</div>
+{% endblock %}

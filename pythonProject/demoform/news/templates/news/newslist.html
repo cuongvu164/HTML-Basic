@@ -1,0 +1,13 @@
+{% extends 'news/Home.html' %}
+{% block content123 %}
+<div>
+{% if dstin %}
+    {% for item in dstin %}
+        <a href="/news/list/{{item.art_id}}">{{item.art_name}}</a>
+        <br>
+    {% endfor %}
+    {% else %}
+     <h4>Khong co du lieu trong database</h4>
+    {% endif %}
+</div>
+{% endblock %}

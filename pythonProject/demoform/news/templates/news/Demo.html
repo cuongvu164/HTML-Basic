@@ -1,0 +1,34 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="{% static 'news/layout_float.css' %}">
+    <link rel="stylesheet" href="{% static 'news/style.css' %}">
+</head>
+<body>
+<div class="t1">
+    <h1><a href="/news/demo">IT.net</a></h1>
+</div>
+<div class="toolbar">
+    <ul>
+        <li>    Trang chủ</li>
+        <li>    Loại</li>
+        <li>    Cửa hàng</li>
+        <li>    Tài khoản</li>
+        <li>    Liên hệ</li>
+        <li>    Đóng góp</li>
+    </ul>
+</div>
+<br><br>
+     {% block contentTest %}
+        {% endblock %}
+<div class="footer">
+    <h1>IT.net</h1>
+    <a href="/news/demo/list">Danh sách bài đăng</a>
+</div>
+</body>
+
+</html>

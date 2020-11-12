@@ -1,0 +1,32 @@
+.t1{
+        color: red;
+        background-color:#CCC;
+        }
+        ul li{
+            list-style-type: none;
+            }
+        .toolbar {
+            background-color: #234;
+            color: pink;
+            font-size:30px;
+        }
+        .toolbar ul li{
+            float: left;
+            padding-left: 20px;
+        }
+        .toolbar ul li:hover{
+            background-color: yellow;
+            color: green;
+        }
+        .toolbar ul{
+            list-style-type: none;
+            }
+        .toolbar:after{
+            clear: both;
+            display: table;
+            content: "";
+            border: 1;
+        }
+.footer{
+        clear:both;
+}
